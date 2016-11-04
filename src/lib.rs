@@ -261,7 +261,7 @@ macro_rules! bitflags {
 
             /// Returns an empty set of flags.
             #[inline]
-            pub fn empty() -> $BitFlags {
+            pub const fn empty() -> $BitFlags {
                 $BitFlags { bits: 0 }
             }
 
@@ -281,7 +281,7 @@ macro_rules! bitflags {
 
             /// Returns the raw value of the flags currently stored.
             #[inline]
-            pub fn bits(&self) -> $T {
+            pub const fn bits(&self) -> $T {
                 self.bits
             }
 

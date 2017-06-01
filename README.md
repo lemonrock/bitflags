@@ -1,9 +1,6 @@
-bitflags
-========
+# bitflags-associated-constants
 
-A Rust macro to generate structures which behave like a set of bitflags
-
-[![Build Status](https://travis-ci.org/rust-lang-nursery/bitflags.svg?branch=master)](https://travis-ci.org/rust-lang-nursery/bitflags)
+***This is a temporary fork of an obsolete version of [bitflags](https://github.com/rust-lang-nursery/bitflags) in order to use associated constants and constant functions***
 
 [Documentation](https://doc.rust-lang.org/bitflags)
 
@@ -13,12 +10,12 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-bitflags = "0.6"
+bitflags-associated-constants = "0.6"
 ```
 
 and this to your crate root:
 
 ```rust
 #[macro_use]
-extern crate bitflags;
+extern crate bitflags_associated_constants;
 ```
